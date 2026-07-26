@@ -1,0 +1,519 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-celeste: #188fc7;
+  --color-celeste-oscuro: #0876ad;
+  --color-azul: #003956;
+  --color-azul-oscuro: #002c44;
+  --color-blanco: #ffffff;
+  --color-gris-claro: #f4f4f4;
+  --color-gris: #747474;
+  --color-negro: #171717;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================
+   MENÚ
+========================= */
+
+.menu {
+  position: relative;
+  z-index: 20;
+  background-color: var(--color-negro);
+}
+
+.menu__contenedor {
+  width: min(1100px, 90%);
+  min-height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.menu__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-blanco);
+  text-decoration: none;
+}
+
+.menu__logo-imagen {
+  display: block;
+  max-height: 36px;
+  width: auto;
+}
+
+
+
+.menu__logo-icono {
+  font-size: 28px;
+}
+
+.menu__logo-texto {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.menu__logo-texto strong {
+  font-size: 20px;
+}
+
+.menu__logo-texto small {
+  margin-top: 4px;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.menu__lista {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__item {
+  margin: 0;
+}
+
+.menu__enlace {
+  display: block;
+  color: var(--color-blanco);
+  font-size: 14px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.menu__enlace:hover {
+  opacity: 0.7;
+}
+
+/* Botón hamburguesa */
+
+.menu__boton {
+  width: 42px;
+  height: 42px;
+  display: none;
+  padding: 8px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu__linea {
+  width: 100%;
+  height: 3px;
+  display: block;
+  margin: 5px 0;
+  border-radius: 4px;
+  background-color: var(--color-blanco);
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.menu__boton--activo .menu__linea:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu__boton--activo .menu__linea:nth-child(2) {
+  opacity: 0;
+}
+
+.menu__boton--activo .menu__linea:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* =========================
+   SLIDER
+========================= */
+
+.slider {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--color-blanco);
+  text-align: center;
+  background-color: #222222;
+}
+
+.slider__imagen {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__capa {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.58);
+}
+
+.slider__contenido {
+  position: relative;
+  z-index: 2;
+  width: min(800px, 75%);
+}
+
+.slider__titulo {
+  margin-bottom: 12px;
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.slider__subtitulo {
+  margin-bottom: 45px;
+  font-size: 16px;
+}
+
+.slider__indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.slider__indicador {
+  width: 22px;
+  height: 4px;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+}
+
+.slider__indicador--activo {
+  background-color: var(--color-blanco);
+}
+
+.slider__flecha {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  color: var(--color-blanco);
+  font-size: 36px;
+  line-height: 1;
+  background-color: rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.slider__flecha:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slider__flecha--anterior {
+  left: 24px;
+}
+
+.slider__flecha--siguiente {
+  right: 24px;
+}
+
+/* =========================
+   BIENVENIDA
+========================= */
+
+.bienvenida {
+  padding: 48px 20px;
+  color: var(--color-negro);
+  text-align: center;
+  background-color: var(--color-blanco);
+}
+
+.bienvenida__titulo {
+  margin-bottom: 14px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.bienvenida__texto {
+  width: min(700px, 100%);
+  margin: 0 auto;
+  color: var(--color-gris);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================
+   PILARES
+========================= */
+
+.pilares {
+  padding: 55px 20px;
+  color: var(--color-blanco);
+  background-color: var(--color-negro);
+}
+
+.pilares__contenedor {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.pilar {
+  min-height: 220px;
+  padding: 20px 30px;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.pilar:last-child {
+  border-right: none;
+}
+
+.pilar__icono {
+  min-height: 54px;
+  display: block;
+  margin-bottom: 14px;
+  font-size: 38px;
+}
+
+.pilar__titulo {
+  margin-bottom: 18px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.pilar__texto {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  padding: 22px 20px;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  background-color: var(--color-negro);
+}
+
+.footer__texto {
+  font-size: 12px;
+}
+
+/* =========================
+   TABLET Y MENÚ MÓVIL
+========================= */
+
+@media (max-width: 800px) {
+  .menu__contenedor {
+    position: relative;
+    min-height: 70px;
+    padding: 10px 0;
+  }
+
+  .menu__boton {
+    display: block;
+  }
+
+  .menu__lista {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 30;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 0;
+    background-color: var(--color-gris);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  }
+
+  .menu__lista--abierta {
+    display: flex;
+  }
+
+  .menu__item {
+    width: 100%;
+  }
+
+  .menu__enlace {
+    width: 100%;
+    padding: 13px 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .menu__enlace:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .pilares__contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pilar:nth-child(2) {
+    border-right: none;
+  }
+
+  .pilar:nth-child(-n + 2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  }
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 520px) {
+  .menu__contenedor {
+    width: 92%;
+  }
+
+  .menu__logo-imagen {
+  max-height: 32px;
+}
+
+  .menu__logo-texto strong {
+    font-size: 18px;
+  }
+
+  .menu__logo-icono {
+    font-size: 25px;
+  }
+
+  .slider {
+    min-height: 340px;
+  }
+
+  .slider__contenido {
+    width: 70%;
+  }
+
+  .slider__subtitulo {
+    font-size: 14px;
+  }
+
+  .slider__flecha {
+    width: 36px;
+    height: 36px;
+    font-size: 28px;
+  }
+
+  .slider__flecha--anterior {
+    left: 10px;
+  }
+
+  .slider__flecha--siguiente {
+    right: 10px;
+  }
+
+  .pilares__contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .pilar {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  }
+
+  .pilar:last-child {
+    border-bottom: none;
+  }
+}
+
+
+
+
+
+
+
+/* =========================
+   EXPLORAR POKÉMON
+========================= */
+
+.explorar {
+  min-height: 100vh;
+  padding: 60px 20px;
+  color: var(--color-negro);
+  background-color: var(--color-gris-claro);
+}
+
+.explorar__titulo {
+  margin: 0 0 40px;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 400;
+  text-align: center;
+}
+
+.explorar__grilla {
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.pokemon {
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+  background-color: var(--color-blanco);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.pokemon__imagen {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.pokemon__nombre {
+  margin: 12px 0 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+@media (max-width: 800px) {
+  .explorar__grilla {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .explorar {
+    padding: 40px 16px;
+  }
+
+  .explorar__grilla {
+    grid-template-columns: 1fr;
+  }
+}
