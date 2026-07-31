@@ -88,7 +88,7 @@ body {
 
 .menu__enlace {
   display: block;
-  color: var(--color-gris);
+  color: var(--color-gris-claro);
   font-size: 14px;
   text-decoration: none;
   transition: opacity 0.3s ease;
