@@ -15,22 +15,18 @@ body {
   --color-azul-oscuro: #002c44;
   --color-blanco: #ffffff;
   --color-gris-claro: #f4f4f4;
-  --color-gris: #747474;
-  --color-negro: #171717;
+  --color-gris: #363538;
+  --color-gris-claro2: #d9d9d9;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* =========================
-   MENÚ
-========================= */
-
 .menu {
   position: relative;
   z-index: 20;
-  background-color: var(--color-negro);
+  background-color: var(--color-gris-claro2);
 }
 
 .menu__contenedor {
@@ -56,8 +52,6 @@ body {
   max-height: 36px;
   width: auto;
 }
-
-
 
 .menu__logo-icono {
   font-size: 28px;
@@ -94,7 +88,7 @@ body {
 
 .menu__enlace {
   display: block;
-  color: var(--color-blanco);
+  color: var(--color-gris);
   font-size: 14px;
   text-decoration: none;
   transition: opacity 0.3s ease;
@@ -104,7 +98,7 @@ body {
   opacity: 0.7;
 }
 
-/* Botón hamburguesa */
+/* hamburguesa */
 
 .menu__boton {
   width: 42px;
@@ -122,7 +116,7 @@ body {
   display: block;
   margin: 5px 0;
   border-radius: 4px;
-  background-color: var(--color-blanco);
+  background-color: var(--color-gris);
   transition:
     transform 0.3s ease,
     opacity 0.3s ease;
@@ -318,7 +312,7 @@ body {
   padding: 22px 20px;
   color: rgba(255, 255, 255, 0.75);
   text-align: center;
-  background-color: var(--color-negro);
+  background-color: var(--color-gris);
 }
 
 .footer__texto {
