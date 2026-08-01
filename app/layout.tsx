@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from 'next/font/google';
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
 
-const interFont = Inter({
+const inter = Inter({
   variable: "--font-inter",
   subsets: ['latin'],
-  weight: "400",
+  weight: ["300", "400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`m-6 ${interFont.className} h-full antialiased`}
+      className={inter.className}
     >
       <body className="min-h-full flex flex-col">
         <Navbar />
