@@ -43,13 +43,13 @@ export default function Navbar() {
                     </li>
 
                     <li className={styles.menu__item}>
-                        <Link className={styles.menu__enlace} href="/about" onClick={cerrarMenu}>
+                        <Link className={styles.menu__enlace} href="/pages/about" onClick={cerrarMenu}>
                             QUIÉNES SOMOS
                         </Link>
                     </li>
 
                     <li className={styles.menu__item}>
-                        <Link className={styles.menu__enlace} href="/tienda" onClick={cerrarMenu}>
+                        <Link className={styles.menu__enlace} href="/pages/tienda" onClick={cerrarMenu}>
                             TIENDA
                         </Link>
                     </li>
@@ -57,7 +57,7 @@ export default function Navbar() {
 
                 {/*sólo visible en mobile*/}
                     <li className={`${styles.menu__item} ${styles["menu__item--mobile"]}`}>
-                        <Link className={styles.menu__enlace} href="/contacto" onClick={cerrarMenu}>
+                        <Link className={styles.menu__enlace} href="/pages/contacto" onClick={cerrarMenu}>
                         CONTACTO
                         </Link>
                     </li>
@@ -65,7 +65,7 @@ export default function Navbar() {
 
                 {/*sólo visible en desktop*/}
                 <div className={styles.menu__contacto}>
-                    <Link className={styles.menu__enlace} href="/contacto">
+                    <Link className={styles.menu__enlace} href="/pages/contacto">
                         CONTACTO
                     </Link>
                 </div>
