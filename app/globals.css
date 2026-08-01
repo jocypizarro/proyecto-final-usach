@@ -230,30 +230,6 @@ body {
 ========================= */
 
 @media (max-width: 520px) {
-  .menu__contenedor {
-    width: 92%;
-  }
-
-  .menu__logo-imagen {
-  max-height: 32px;
-}
-
-  .menu__logo-texto strong {
-    font-size: 18px;
-  }
-
-  .menu__logo-icono {
-    font-size: 25px;
-  }
-
-  .menu__lista{
-    flex-direction: column;
-  }
-
-  .menu__item--contacto{
-    margin-left: 0;
-  }
-
   .slider {
     min-height: 340px;
   }
