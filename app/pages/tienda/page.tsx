@@ -1,5 +1,5 @@
 "use client";
-
+import type { Metadata } from 'next';
 import { useEffect, useState } from "react";
 import ProductCard from "@/app/components/productCard/ProductCard"
 import styles from "./page.module.css";
@@ -29,6 +29,16 @@ const heroSlides = [
         text: "Aprovecha descuentos únicos por tiempo limitado.",
     },
 ];
+
+/*ESTA PARTE NO SE VISUALIZARÁ PORQUE SE ESTÁ USANDO EL METADATA DE LA PÁGINA LAYOUT, 
+PERO SE DEJA POR SI SE QUIERE USAR EN EL FUTURO
+
+export const metadata: Metadata = {
+title: 'Tienda - Plantilla e-commerce para creativos',
+description: 'Explora nuestro catálogo completo de productos'
+};
+
+*/
 
 export default function TiendaPage() {
     const [products, setProducts] = useState<Product[]>([]);
