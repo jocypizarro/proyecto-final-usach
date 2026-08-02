@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./navbar.module.css";
+import styles from "./navbarcss.module.css";
 
 export default function Navbar() {
     const [menuAbierto, setMenuAbierto] = useState(false)
