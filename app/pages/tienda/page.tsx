@@ -1,7 +1,7 @@
 "use client";
 import type { Metadata } from 'next';
 import { useEffect, useState } from "react";
-import ProductCard from "@/app/components/productCard/ProductCard"
+import ProductCard from "@/app/components/Productcard/ProductCard"
 import styles from "./page.module.css";
 
 interface Product {
