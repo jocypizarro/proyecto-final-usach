@@ -9,24 +9,24 @@
   padding: 3rem 4rem;
   text-align: center;
 }
- 
+
 .heroContent {
   max-width: 640px;
 }
- 
+
 .heroTitle {
   color: #ffffff;
   font-size: 2rem;
   font-weight: 700;
   margin: 0 0 0.75rem;
 }
- 
+
 .heroText {
   color: #e0e0e0;
   font-size: 0.95rem;
   margin: 0 0 1.5rem;
 }
- 
+
 .heroButton {
   background-color: #1a1a1a;
   color: #ffffff;
@@ -38,11 +38,11 @@
   text-transform: uppercase;
   cursor: pointer;
 }
- 
+
 .heroButton:hover {
   background-color: #000000;
 }
- 
+
 .heroArrow {
   position: absolute;
   top: 50%;
@@ -55,15 +55,15 @@
   cursor: pointer;
   padding: 0.5rem;
 }
- 
+
 .heroArrowLeft {
   left: 1rem;
 }
- 
+
 .heroArrowRight {
   right: 1rem;
 }
- 
+
 /* Shop / catálogo */
 .shop {
   padding: 3rem 4rem;
