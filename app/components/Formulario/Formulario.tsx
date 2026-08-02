@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, FormEvent, ChangeEvent } from 'react';
-import styles from './Formulario.module.css';
+import styles from './formulario.module.css';
 
 const ASUNTOS = [
   'CONSULTA',

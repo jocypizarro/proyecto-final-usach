@@ -1,4 +1,4 @@
-import styles from "./ProductCard.module.css";
+import styles from "./productCard.module.css";
  
 interface ProductCardProps {
   id: number;
