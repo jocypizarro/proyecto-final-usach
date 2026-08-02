@@ -4,11 +4,11 @@ import { useState, FormEvent, ChangeEvent } from 'react';
 import styles from './formulario.module.css';
 
 const ASUNTOS = [
-  'CONSULTA',
-  'COTIZACIÓN DE CUSTOMIZACIÓN',
-  'PEDIDO ESPECIAL',
-  'PETICIÓN DE COLABORACIÓN',
-  'PROBLEMA CON EL PAGO O ENVÍO',
+    'CONSULTA',
+    'COTIZACIÓN DE CUSTOMIZACIÓN',
+    'PEDIDO ESPECIAL',
+    'PETICIÓN DE COLABORACIÓN',
+    'PROBLEMA CON EL PAGO O ENVÍO',
 ];
 
 const MAX_MENSAJE = 500;
