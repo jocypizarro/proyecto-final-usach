@@ -44,3 +44,19 @@ https://tarea-10-nu.vercel.app
 
 // creación de proyecto con next y se copiaron los archivos de una tarea.
 // 
+
+*uso de ia
+*dónde usamos typescript:
+- por next, importamos Image from "next/image" en vez de usar <Image />
+- usamos interface algo {
+    id: number;
+    title: string;
+    price: number;
+    description: string;
+    category: string;
+    image: string;
+    }
+  al inicio del archivo para definir las "reglas".
+- usamos el abreviado export default function algo (){
+    return: ();
+}

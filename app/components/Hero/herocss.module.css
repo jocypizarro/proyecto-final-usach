@@ -1,0 +1,161 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+    }
+
+    .slider {
+    display: flex;
+
+    width: 400vw;
+    height: 100%;
+
+    transition: transform .8s ease;
+    }
+
+    .slide {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+
+    flex-shrink: 0;
+    }
+
+    .image {
+    object-fit: cover;
+    }
+
+    .overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.45);
+    }
+
+    .content {
+    position: absolute;
+
+    top: 35%;
+    left: 12%;
+
+    max-width: 550px;
+
+    z-index: 2;
+
+    color: white;
+    }
+
+    .content h1{
+    font-size: clamp(2.5rem,6vw,5rem);
+
+    margin-bottom: 1rem;
+
+    line-height: 1.1;
+    }
+
+    .content p{
+    font-size: 1.2rem;
+
+    margin-bottom: 2rem;
+
+    line-height: 1.6;
+    }
+
+    .button{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:15px 34px;
+
+    background:white;
+
+    color:black;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+    }
+
+    .button:hover{
+
+    background:black;
+
+    color:white;
+    }
+
+    .arrow{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    z-index:10;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:2rem;
+
+    color:white;
+
+    background:rgba(0,0,0,.3);
+
+    transition:.3s;
+    }
+
+    .arrow:hover{
+
+    background:black;
+    }
+
+    .left{
+
+    left:30px;
+    }
+
+    .right{
+
+    right:30px;
+    }
+
+    @media (max-width:768px){
+
+    .content{
+
+        left:8%;
+
+        top:32%;
+
+        max-width:300px;
+    }
+
+    .content h1{
+
+        font-size:2.6rem;
+    }
+
+    .content p{
+
+        font-size:1rem;
+    }
+
+    .arrow{
+
+        width:45px;
+        height:45px;
+    }
+    }

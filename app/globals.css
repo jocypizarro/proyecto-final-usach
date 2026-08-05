@@ -9,7 +9,7 @@ body {
 }
 
 :root {
-
+  --color-azul: #444ce7;
   --color-blanco: #ffffff;
   --color-gris-claro: #d3d3d3;
   --color-gris-claro2: #a2a2a2;
@@ -88,36 +88,10 @@ body {
 }
 
 /* =========================
-  CELULAR
+CELULAR
 ========================= */
 
 @media (max-width: 520px) {
-  .slider {
-    min-height: 340px;
-  }
-
-  .slider__contenido {
-    width: 70%;
-  }
-
-  .slider__subtitulo {
-    font-size: 14px;
-  }
-
-  .slider__flecha {
-    width: 36px;
-    height: 36px;
-    font-size: 28px;
-  }
-
-  .slider__flecha--anterior {
-    left: 10px;
-  }
-
-  .slider__flecha--siguiente {
-    right: 10px;
-  }
-
   .pilares__contenedor {
     grid-template-columns: 1fr;
   }
@@ -129,74 +103,5 @@ body {
 
   .pilar:last-child {
     border-bottom: none;
-  }
-}
-
-
-
-
-
-
-
-/* =========================
-  EXPLORAR POKÉMON
-========================= */
-
-.explorar {
-  min-height: 100vh;
-  padding: 60px 20px;
-  color: var(--color-negro);
-  background-color: var(--color-gris-claro);
-}
-
-.explorar__titulo {
-  margin: 0 0 40px;
-  font-size: clamp(32px, 5vw, 48px);
-  font-weight: 400;
-  text-align: center;
-}
-
-.explorar__grilla {
-  width: min(1000px, 100%);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.pokemon {
-  padding: 24px;
-  border-radius: 12px;
-  text-align: center;
-  background-color: var(--color-blanco);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-}
-
-.pokemon__imagen {
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-}
-
-.pokemon__nombre {
-  margin: 12px 0 0;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-@media (max-width: 800px) {
-  .explorar__grilla {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 520px) {
-  .explorar {
-    padding: 40px 16px;
-  }
-
-  .explorar__grilla {
-    grid-template-columns: 1fr;
   }
 }

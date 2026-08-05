@@ -24,7 +24,7 @@ export default function Navbar() {
                     <div className={styles["menu__logo-swap"]}>
                         <Image
                             className={styles["menu__logo-imagen"]}
-                            src="/assets/isotipo_temporal2.png" 
+                            src="/assets/isotipo_tienda_temporal.png" 
                             alt="Logo Tienda"
                             width={140}
                             height={50}
