@@ -9,20 +9,21 @@ body {
 }
 
 :root {
-  --color-celeste: #188fc7;
-  --color-celeste-oscuro: #0876ad;
-  --color-azul: #003956;
-  --color-azul-oscuro: #002c44;
+
   --color-blanco: #ffffff;
-  --color-gris-claro: #f4f4f4;
-  --color-gris: #020202;
-  --color-gris-claro2: #d9d9d9;
+  --color-gris-claro: #d3d3d3;
+  --color-gris-claro2: #a2a2a2;
+  --color-naranja: #b33609;
+  --color-gris-medio: #828282;
+  --color-gris-oscuro: #4a4a4a;
+  --color-gris-oscuro2: #282828;
+  --color-negro: #000000;
 }
 
 
 
 /* =========================
-   SLIDER
+  SLIDER
 ========================= */
 
 .slider {
@@ -207,7 +208,7 @@ body {
 }
 
 /* =========================
-   TABLET Y MENÚ MÓVIL
+  TABLET Y MENÚ MÓVIL
 ========================= */
 
 @media (max-width: 800px) {
@@ -226,7 +227,7 @@ body {
 }
 
 /* =========================
-   CELULAR
+  CELULAR
 ========================= */
 
 @media (max-width: 520px) {
@@ -301,7 +302,7 @@ body {
 
 
 /* =========================
-   EXPLORAR POKÉMON
+  EXPLORAR POKÉMON
 ========================= */
 
 .explorar {

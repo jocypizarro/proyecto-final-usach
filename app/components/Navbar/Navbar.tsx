@@ -21,14 +21,16 @@ export default function Navbar() {
             <nav className={styles.menu__contenedor}>
                 
                 <Link className={styles.menu__logo} href="/" onClick={cerrarMenu}>
-                    <Image
-                        className={styles["menu__logo-imagen"]}
-                        src="/assets/logo_black.png" 
-                        alt="Logo Tienda"
-                        width={140}
-                        height={50}
-                        />
-                    <span className={styles.menu__marca}>tienda_temporal</span>
+                    <div className={styles["menu__logo-swap"]}>
+                        <Image
+                            className={styles["menu__logo-imagen"]}
+                            src="/assets/isotipo_temporal2.png" 
+                            alt="Logo Tienda"
+                            width={140}
+                            height={50}
+                            />
+                        <span className={styles.menu__marca}>tienda_temporal</span>
+                    </div>
                 </Link>
 
                 <ul
