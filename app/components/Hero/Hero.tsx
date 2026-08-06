@@ -78,17 +78,21 @@ interface Slide {
                 <div className={styles.overlay} />
 
                 <div className={styles.content}>
-                <h1>{slide.title}</h1>
+                    <h1>{slide.title}</h1>
+                    <p>{slide.subtitle}</p>
 
-                <p>{slide.subtitle}</p>
-
-                <Link href="/tienda" className={styles.button}>
-                    Ver más
-                </Link>
+                    <Link href="/tienda" className="buttonFeatured">
+                        Ver más
+                    </Link>
                 </div>
             </div>
             ))}
         </div>
+
+
+
+
+
 
         <button
             onClick={prevSlide}

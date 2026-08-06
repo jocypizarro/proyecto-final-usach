@@ -1,5 +1,6 @@
+import Link from "next/link";
 import styles from "./productcardcss.module.css";
- 
+
 interface ProductCardProps {
   id: number;
   title: string;
@@ -8,7 +9,7 @@ interface ProductCardProps {
   isFavorite: boolean;
   onToggleFavorite: (id: number) => void;
 }
- 
+
 export default function ProductCard({
   id,
   title,
@@ -26,16 +27,18 @@ export default function ProductCard({
       >
         {isFavorite ? "♥" : "♡"}
       </button>
- 
+
       <div className={styles.imageWrapper}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={image} alt={title} className={styles.image} />
       </div>
- 
+
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.price}>${price.toFixed(2)}</p>
- 
-      <button className={styles.buyButton}>Comprar</button>
+
+      <Link href={`/pages/tienda/producto/${id}`} className={styles.buyButton}>
+        Comprar
+      </Link>
     </div>
   );
 }
