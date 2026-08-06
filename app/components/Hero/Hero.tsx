@@ -13,22 +13,22 @@ interface Slide {
 
     const slides: Slide[] = [
     {
-        image: "/assets/1.jpg",
-        title: "Creamos experiencias",
-        subtitle: "Diseño contemporáneo para marcas creativas.",
+        image: "/assets/i.png",
+        title: "Experiencias visuales y sensoriales",
+        subtitle: "Explora nuestra colección de objetos de diseño.",
     },
     {
-        image: "/assets/2.jpg",
-        title: "Diseño con propósito",
-        subtitle: "Cada detalle cuenta una historia.",
+        image: "/assets/ii.png",
+        title: "Diseño que inspira",
+        subtitle: "Descubre piezas únicas para ti.",
     },
     {
-        image: "/assets/3.jpg",
+        image: "/assets/iii.png",
         title: "Objetos únicos",
         subtitle: "Colecciones inspiradas en el arte.",
     },
     {
-        image: "/assets/4.jpg",
+        image: "/assets/iiii.png",
         title: "Hecho para destacar",
         subtitle: "Diseño, calidad y personalidad.",
     },
