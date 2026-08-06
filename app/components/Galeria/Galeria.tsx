@@ -89,7 +89,7 @@ export default function Galeria({ productId = 1 }: GaleriaProps) {
 
                 {/* Producto destacado (bloque verde del wireframe), enlaza a la ficha del producto */}
                 <Link
-                    href={producto ? `/producto/${producto.id}` : "#"}
+                    href={producto ? `/pages/tienda/producto/${producto.id}` : "#"}
                     className={`${styles.item} ${styles.itemProducto}`}
                     aria-label={producto ? producto.title : "Producto destacado"}
                 >
