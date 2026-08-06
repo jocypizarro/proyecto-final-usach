@@ -1,6 +1,7 @@
 "use client";
 import type { Metadata } from 'next';
 import { useEffect, useState } from "react";
+import Link from 'next/link';
 import ProductCard from "@/app/components/productCard/ProductCard"
 import styles from "./page.module.css";
 
@@ -135,11 +136,11 @@ export default function TiendaPage() {
             >
             ‹
             </button>
-    
+            
             <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>{heroSlides[heroIndex].title}</h1>
-            <p className={styles.heroText}>{heroSlides[heroIndex].text}</p>
-            <button className={styles.heroButton}>Ver productos</button>
+                <h1 className={styles.heroTitle}>{heroSlides[heroIndex].title}</h1>
+                <p className={styles.heroText}>{heroSlides[heroIndex].text}</p>
+                <button className={styles.heroButton}>Ver productos</button>
             </div>
     
             <button
@@ -246,9 +247,9 @@ export default function TiendaPage() {
             <p className={styles.ctaText}>
             Escríbenos y te ayudamos a encontrar el producto ideal para ti.
             </p>
-            <a href="/contacto" className={styles.ctaButton}>
-            Contáctanos
-            </a>
+            <Link href="/pages/contacto" className={styles.ctaButton}>
+                Contáctanos
+            </Link>
         </section>
         </main>
     );
