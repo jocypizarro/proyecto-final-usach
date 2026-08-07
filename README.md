@@ -29,7 +29,9 @@ Referencias visuales y técnicas utilizadas como inspiración y apoyo durante el
 
 Este archivo se encuentra en edición continua, por lo que tanto sus contenidos como las decisiones visuales documentadas pueden cambiar durante el desarrollo y no siempre representarán de manera exacta la última versión implementada en producción.
 
-🎨 Ver mapas de navegación, wireframes, referencias y sistema de diseño en Figma
+Para ver los mapas de navegación, wireframes, referencias y sistema de diseño en Figma visitar el siguiente link:
+
+[Figma](https://www.figma.com/design/W8w34JKujZErZrV53Bt2Tv/estudio-temporal_Design-System?node-id=2327-3&t=cyPufD88jTSulh5X-1)
 
 ## Instrucciones de instalación
 
