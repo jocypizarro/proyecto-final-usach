@@ -16,6 +16,21 @@ La plantilla se encuentra actualmente **en construcción** y está sujeta a camb
 
 Durante el desarrollo tuvimos apoyo instruccional ocasional de IA (ChatGPT y Claude) para la comprensión y ejecución de la pauta del curso. Una vez completados esos hitos, nos apoyamos más en estas herramientas para completar contenidos del proyecto.
 
+## Diseño y documentación en Figma
+
+El proceso de diseño del proyecto está documentado en un archivo de Figma que reúne:
+
+Mapas de navegación.
+Wireframes para escritorio y dispositivos móviles.
+Imágenes y recursos visuales utilizados en la plantilla.
+Definiciones iniciales del sistema de diseño.
+Referencias de componentes, estilos y estructura visual.
+Referencias visuales y técnicas utilizadas como inspiración y apoyo durante el desarrollo del proyecto.
+
+Este archivo se encuentra en edición continua, por lo que tanto sus contenidos como las decisiones visuales documentadas pueden cambiar durante el desarrollo y no siempre representarán de manera exacta la última versión implementada en producción.
+
+🎨 Ver mapas de navegación, wireframes, referencias y sistema de diseño en Figma
+
 ## Instrucciones de instalación
 
 Este proyecto utiliza **Next.js**, **React**, **TypeScript** y **CSS Modules**.
