@@ -1,18 +1,18 @@
 .about {
-  width: 100%;
-  padding: clamp(3rem, 7vw, 5rem) clamp(1.25rem, 7vw, 5.25rem);
-  background-color: var(--color-white);
+    width: 100%;
+    padding: clamp(3rem, 7vw, 5rem) clamp(1.25rem, 7vw, 5.25rem);
+    background-color: var(--color-white);
 }
 
 .aboutGrid {
     display: grid;
     grid-template-columns:
-        minmax(320px, 500px)
-        minmax(0, 500px);
+    minmax(320px, 500px)
+    minmax(0, 500px);
     grid-template-areas:
-        "image introduction"
-        "image description"
-        "image contact";
+    "image introduction"
+    "image description"
+    "image contact";
     grid-template-rows: auto auto 1fr;
     column-gap: clamp(2rem, 3vw, 3.5rem);
     row-gap: 1.5rem;
@@ -92,20 +92,20 @@
 
 @media (max-width: 768px) {
     .about {
-        padding: 2.875rem 1.25rem 4.25rem;
+    padding: 2.875rem 1.25rem 4.25rem;
     }
 
     .aboutGrid {
-        grid-template-columns:
-            minmax(0, 1fr)
-            minmax(0, 1fr);
-        grid-template-areas:
-            "image introduction"
-            "description description"
-            "contact contact";
-        grid-template-rows: auto auto auto;
-        column-gap: 0.75rem;
-        row-gap: 1.5rem;
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+    grid-template-areas:
+        "image introduction"
+        "description description"
+        "contact contact";
+    grid-template-rows: auto auto auto;
+    column-gap: 0.75rem;
+    row-gap: 1.5rem;
 
     min-height: auto;
     }
